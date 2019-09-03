@@ -21,13 +21,16 @@ Copy your images and annotation files to directories `../YOLOv2/data/annotation/
 `run python spilt.py`  
 Then train and val images will be generated in  `../YOLOv2/data/annotation/train` and  `/YOLOv2/data/annotation/test` directories, respectively.  
 
-### 4 Train model  
+### 4 Anchor clusters using K-means  
+Run K-means clustering on the training set bounding boxes to automatically find good anchors.
+
+### 5 Train model  
 The model parameters, training parameters and eval parameters are all defined by `parameters.py`.  
 `cd ../YOLOv2/Code`  
 `run python train.py`  
 The model will be saved in directory `../YOLOv2/model/checkpoint`, and some detection results are saved in `../YOLOv2/pic`. 
  
-### 5 Visualize model using Tensorboard  
+### 6 Visualize model using Tensorboard  
 `cd ../YOLOv2`  
 `run tensorboard --logdir=model/`   
 Open the URL in browser to visualize model.  
