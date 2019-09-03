@@ -24,7 +24,7 @@ Then train and val images will be generated in  `../YOLOv2/data/annotation/train
 ### 4 Anchor clusters using K-means  
 Run K-means clustering on the training set bounding boxes to automatically find good anchors.
 
-### 5 Train model  
+### 5 Train model using Tensorflow  
 The model parameters, training parameters and eval parameters are all defined by `parameters.py`.  
 `cd ../YOLOv2/Code`  
 `run python train.py`  
