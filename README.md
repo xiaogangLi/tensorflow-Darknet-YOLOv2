@@ -64,4 +64,4 @@ run
 Open the URL in browser to visualize model.  
 
 ## Examples  
-Here are two successful detection examples in my dataset:   
+Here are a two successful detection examples in my dataset:   
