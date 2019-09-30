@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 28 15:46:14 2019
-https://github.com/pjreddie/darknet/blob/master/src/region_layer.c
-https://blog.csdn.net/xiaohu2022/article/details/80666655
-@author: LiXiaoGang        
-"""
+
 from __future__ import division
 
 import os
