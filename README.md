@@ -66,5 +66,5 @@ Open the URL in browser to visualize model.
 ## Examples  
 Here are two successful detection examples in my dataset:   
 
-![Image](https://github.com/xiaogangLi/tensorflow-Darknet-YOLOv2/tree/master/YOLOv2/pic/example1.jpg)
-![Image](https://github.com/xiaogangLi/tensorflow-Darknet-YOLOv2/tree/master/YOLOv2/pic/pic/example0.jpg)
+![Image](https://github.com/xiaogangLi/tensorflow-Darknet-YOLOv2/blob/master/YOLOv2/pic/example0.jpg)
+![Image](https://github.com/xiaogangLi/tensorflow-Darknet-YOLOv2/blob/master/YOLOv2/pic/example1.jpg)
