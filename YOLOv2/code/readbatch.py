@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 27 12:47:50 2019
-
-@author: LiXiaoGang
-"""
 
 import os
 import sys
@@ -20,10 +15,8 @@ val_image_name = pd.read_csv(os.path.join(para.PATH,'data','val','val.txt'),head
 def mini_batch(i,batch_size,flag):
     if flag == 'train':
         data_name = train_image_name
-        
     elif flag == 'val':
         data_name = val_image_name
-        
     else:
         print('The argument "%s"  does not exist!' % (flag))
         sys.exit(0)
