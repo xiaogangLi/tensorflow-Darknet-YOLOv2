@@ -31,7 +31,6 @@ def parse_object(xmlFile):
         
         patch_info = {'classes':classes,'xmin':xmin,'ymin':ymin,'xmax':xmax,'ymax':ymax}
         object_list.append(patch_info)
-        
     return object_list
 
 
@@ -50,5 +49,4 @@ def parse_size(xmlFile):
     depth = int(depth.text)  
     
     size = {'width':width,'height':height,'depth':depth}
-        
     return size
