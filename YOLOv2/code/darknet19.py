@@ -10,9 +10,7 @@ def darknet(clip_X,mode):
     Implementation of Darknet-19.
     Architecture: https://arxiv.org/abs/1612.08242
     '''
-    
     with tf.variable_scope('Darknet-19'):
-        
         # ---------------------
         net = tf.layers.conv2d(clip_X,filters=32,kernel_size=(3,3),strides=(1,1),
                                padding='same',activation=None,use_bias=True,name='conv-1')
@@ -139,4 +137,3 @@ def darknet(clip_X,mode):
                                   use_bias=True,
                                   name='Output')
         return logits
-        
