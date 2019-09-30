@@ -1,26 +1,15 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 17 11:52:05 2018
-
-@author: LiXiaoGang
-"""
-
-# Parse xml file
 
 import xml.etree.ElementTree as ET
 
 
 def parse_object(xmlFile):
-    '''
-    Note:image(imageName)的标注文件为xmlFile
-    '''
     Tree = ET.parse(xmlFile) 
     root = Tree.getroot()
     object_set = root.findall('object')
     
     object_list = []
     for one in object_set:
-        
         # get class
         name = one.find('name')
         classes = name.text
@@ -47,9 +36,6 @@ def parse_object(xmlFile):
 
 
 def parse_size(xmlFile):
-    '''
-    Note:image(imageName)的标注文件为xmlFile
-    '''
     Tree = ET.parse(xmlFile) 
     root = Tree.getroot()
     size = root.findall('size')[0]
