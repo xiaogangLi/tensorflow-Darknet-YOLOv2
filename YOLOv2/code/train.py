@@ -101,7 +101,6 @@ def isobject(Label,logits,i,j,k):
 def noobject(Label,logits,truth,i,j,k):
     # tx,ty,tw,th,iou
     loss_collection = []
-    iou_list = []
     for b in range(para.NUM_ANCHORS):
         # predctions              
         bbox_pred = logits[i,j,k,b*(5+para.NUM_CLASSESS):(b+1)*(5+para.NUM_CLASSESS)]
@@ -115,6 +114,7 @@ def noobject(Label,logits,truth,i,j,k):
         bbox_pred_xmax = bx + bw/2.0
         bbox_pred_ymax = by + bh/2.0
         
+        iou_list = []
         for g in range(para.MAX_NUM_GT):
             # groundtruth
             gt = truth[i,:][4*g:4*(g+1)]
