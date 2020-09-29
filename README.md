@@ -5,8 +5,8 @@ This is the implementation of YOLOv2 for object detection in Tensorflow. It cont
 
 ## Getting Started
 ### 1 Prerequisites  
-* Python3  
-* Tensorflow  
+* Python 3.x  
+* Tensorflow  1.x  
 * Opencv-python  
 * Pandas  
 
